@@ -1,0 +1,24 @@
+Algorithme Somme_Distincts
+Variables
+  Set1, Set2 : tableau d'entiers
+  i, j, sum : entier
+
+Début
+  Set1 ← [3, 1, 7, 9]
+  Set2 ← [2, 4, 1, 9, 3]
+  sum ← 0
+
+  Pour i de 0 à longueur(Set1) - 1 faire
+    Si Set1[i] n'existe pas dans Set2 alors
+      sum ← sum + Set1[i]
+    Fin Si
+  Fin Pour
+
+  Pour i de 0 à longueur(Set2) - 1 faire
+    Si Set2[i] n'existe pas dans Set1 alors
+      sum ← sum + Set2[i]
+    Fin Si
+  Fin Pour
+
+  Afficher "Somme des distincts :", sum
+Fin
