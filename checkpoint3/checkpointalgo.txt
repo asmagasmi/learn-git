@@ -1,0 +1,24 @@
+let sentence = "This is an example sentence.";
+
+let lengthCounter = 0;
+let wordCounter = 0;
+let vowelCounter = 0;
+
+let vowels = "aeiouAEIOU";
+
+for (let i = 0; i < sentence.length; i++) {
+    let char = sentence[i];
+    lengthCounter++;
+    if (char === ' ') {
+        wordCounter++;
+    }
+    if (vowels.includes(char)) {
+        vowelCounter++;
+    }
+}
+
+wordCounter++;
+
+console.log(lengthCounter);
+console.log(wordCounter);
+console.log(vowelCounter);
